@@ -4,49 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Us | Vision Web Agency</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Contact Section -->
-    <div class="hero-section">
-        <h1>Contact Us</h1>
-        <p>We'd love to hear from you! Fill out the form below, or reach out to us directly.</p>
-    </div>
+    <section class="contact-section">
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you! Fill out the form below, or reach out to us via phone or email.</p>
 
-    <!-- Contact Form Section -->
-    <section class="contact-form">
-        <form>
-            <div class="input-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" placeholder="Enter your name" required>
+            <!-- Contact Form -->
+            <form action="https://formspree.io/f/mrbeaqvk" method="POST" class="contact-form">
+                <div class="input-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Message:</label>
+                    <textarea name="message" rows="4" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>📞 <strong>Phone:</strong> +255 758 144 662 | +255 682 463 739</p>
+                <p>📧 <strong>Email:</strong> <a href="mailto:visionwebagency03@gmail.com">visionwebagency03@gmail.com</a></p>
             </div>
-            <div class="input-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Enter your email" required>
-            </div>
-            <div class="input-group">
-                <label for="message">Message:</label>
-                <textarea id="message" rows="4" placeholder="Write your message here..." required></textarea>
-            </div>
-            <button type="submit" class="cta-button">Send Message</button>
-        </form>
+        </div>
     </section>
 
-    <!-- Contact Details Section -->
-    <section class="contact-details">
-        <h2>Get in Touch</h2>
-        <p><span>📞 Phone:</span> +255 758 144 662 | +255 682 463 739</p>
-        <p><span>📧 Email:</span> <a href="mailto:visionwebagency03@gmail.com">visionwebagency03@gmail.com</a></p>
-    </section>
+    <footer>
+        <p>&copy; 2025 Vision Web Agency. All rights reserved.</p>
+    </footer>
 </body>
 </html>
