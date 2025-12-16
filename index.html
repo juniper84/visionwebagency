@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vision Web Agency — Business-in-a-Box™ for Tanzanian businesses. Websites, WhatsApp customer flow, Google visibility, professional email, SEO, hosting & maintenance." />
+  <title>Vision Web Agency — Business-in-a-Box™</title>
+
+  <!-- Favicon (replace with your own) -->
+  <link rel="icon" type="image/png" href="assets/logo/favicon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+  <!-- Intro overlay (first visit only) -->
+  <div id="intro" class="intro" aria-hidden="true">
+    <div class="intro__inner">
+      <div class="intro__grid" aria-hidden="true"></div>
+
+      <div class="intro__logoWrap" aria-label="Vision Web Agency intro">
+        <!-- Replace this with your real logo file -->
+        <!-- Put your chosen logo here: assets/logo/logo.png (transparent preferred) -->
+        <img id="introLogo" class="intro__logo" src="assets/logo/logo.png" alt="Vision Web Agency" />
+        <div class="intro__scan" aria-hidden="true"></div>
+        <div class="intro__glow" aria-hidden="true"></div>
+      </div>
+
+      <canvas id="introParticles" class="intro__particles" aria-hidden="true"></canvas>
+      <div class="intro__hint" aria-hidden="true">Loading experience…</div>
+    </div>
+  </div>
+
+  <!-- Top progress line -->
+  <div class="topline" aria-hidden="true"></div>
+
+  <!-- Sticky actions (mobile first) -->
+  <div class="stickyActions" aria-label="Quick actions">
+    <a class="btn btn--gold btn--small" id="stickyWhatsApp" href="#" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn btn--ghost btn--small" href="mailto:visionwebagency03@gmail.com">Email</a>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <img class="brand__mark" src="assets/logo/logo.png" alt="Vision Web Agency logo" />
+        <div class="brand__text">
+          <div class="brand__name">Vision Web Agency</div>
+          <div class="brand__tag">Business-in-a-Box™</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav__link" href="#solution">Solution</a>
+        <a class="nav__link" href="#how">How it works</a>
+        <a class="nav__link" href="#packages">Packages</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="header__cta">
+        <a class="btn btn--gold" id="headerWhatsApp" href="#" target="_blank" rel="noopener">Start on WhatsApp</a>
+      </div>
+
+      <button class="menuBtn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span class="menuBtn__bar"></span>
+        <span class="menuBtn__bar"></span>
+      </button>
+    </div>
+
+    <div class="mobileNav" id="mobileNav" aria-hidden="true">
+      <a class="mobileNav__link" href="#solution">Solution</a>
+      <a class="mobileNav__link" href="#how">How it works</a>
+      <a class="mobileNav__link" href="#packages">Packages</a>
+      <a class="mobileNav__link" href="#contact">Contact</a>
+      <div class="mobileNav__actions">
+        <a class="btn btn--gold" id="mobileWhatsApp" href="#" target="_blank" rel="noopener">Start on WhatsApp</a>
+        <a class="btn btn--ghost" href="mailto:visionwebagency03@gmail.com">Email us</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__copy reveal">
+          <div class="chip">
+            <span class="chip__dot" aria-hidden="true"></span>
+            Built for Tanzanian businesses • Imeundwa kwa biashara za Tanzania
+          </div>
+
+          <h1 class="h1">
+            Turn your business into a brand people <span class="goldUnderline">trust</span> online.
+          </h1>
+
+          <p class="lead">
+            We set up your full digital presence for Tanzania a high-performance website, WhatsApp-ready customer flow, Google visibility, and professional email all built to attract customers and build trust.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--gold btn--lg" id="heroWhatsApp" href="#" target="_blank" rel="noopener">Start My Business-in-a-Box</a>
+            <a class="btn btn--ghost btn--lg" href="#how">See How It Works</a>
+          </div>
+
+          <div class="microTrust">
+            <span>Fast setup</span><span class="dot">•</span>
+            <span>Mobile-first</span><span class="dot">•</span>
+            <span>Support & maintenance</span>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="frame">
+            <div class="frame__grid" aria-hidden="true"></div>
+            <div class="stats">
+              <div class="stat">
+                <div class="stat__num" data-count="7">0</div>
+                <div class="stat__label">Days to launch (typical)</div>
+              </div>
+              <div class="stat">
+                <div class="stat__num" data-count="6">0</div>
+                <div class="stat__label">Core business modules</div>
+              </div>
+              <div class="stat">
+                <div class="stat__num">
+                  <span data-count="100">0</span><span class="percent">%</span>
+                </div>
+                <div class="stat__label">Mobile-ready experience</div>
+              </div>
+            </div>
+
+            <div class="pulseCard">
+              <div class="pulseCard__title">Customer Flow</div>
+              <div class="pulseCard__row"><span class="badge">Click</span><span>WhatsApp</span><span class="arrow">→</span><span>Trust</span></div>
+              <div class="pulseCard__row"><span class="badge">Find</span><span>Google</span><span class="arrow">→</span><span>Visit</span></div>
+              <div class="pulseCard__row"><span class="badge">Email</span><span>Pro</span><span class="arrow">→</span><span>Close</span></div>
+            </div>
+
+            <div class="shine" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+      <a class="scrollHint" href="#problem" aria-label="Scroll to next section">
+        <span class="scrollHint__mouse" aria-hidden="true"></span>
+        <span class="scrollHint__text">Scroll</span>
+      </a>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="section" id="problem">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2">Most businesses are online… but not <span class="gold">trusted</span>.</h2>
+          <p class="sub">If your digital presence looks uncertain, customers hesitate. We fix that.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__icon">📱</div>
+            <h3 class="h3">Only a phone number</h3>
+            <p>Customers can’t see what you do, so they don’t take the next step.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon">📍</div>
+            <h3 class="h3">Hard to find on Google</h3>
+            <p>No Google presence means missed customers who are searching right now.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon">⚠️</div>
+            <h3 class="h3">Low trust = low sales</h3>
+            <p>When it feels “unofficial,” people compare you to everyone else and move on.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon">🧩</div>
+            <h3 class="h3">Pieces don’t connect</h3>
+            <p>Facebook, WhatsApp, email—scattered. Customers get confused. You lose leads.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHIFT -->
+    <section class="section section--shift">
+      <div class="container">
+        <div class="shift reveal">
+          <p class="kicker">The shift</p>
+          <h2 class="h2">A website alone doesn’t grow a business.</h2>
+          <p class="sub">Trust comes from visibility, clarity, and a smooth customer journey. That’s what we build.</p>
+          <div class="divider" aria-hidden="true"></div>
+          <div class="shift__bullets">
+            <div class="bullet reveal"><span class="bullet__mark" aria-hidden="true"></span> Customers need confidence before they pay.</div>
+            <div class="bullet reveal"><span class="bullet__mark" aria-hidden="true"></span> Visibility brings traffic. Trust converts it.</div>
+            <div class="bullet reveal"><span class="bullet__mark" aria-hidden="true"></span> Systems win random posts don’t.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTION -->
+    <section class="section" id="solution">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2">Business-in-a-Box<span class="tm">™</span></h2>
+          <p class="sub">A complete online presence that makes your business feel official, easy to reach, and easy to trust.</p>
+        </div>
+
+        <div class="grid6">
+          <div class="module reveal">
+            <div class="module__top">
+              <div class="module__icon">🌐</div>
+              <div class="module__title">Professional Website</div>
+            </div>
+            <p>Fast, modern, mobile-first designed to look premium and convert visitors into customers.</p>
+          </div>
+
+          <div class="module reveal">
+            <div class="module__top">
+              <div class="module__icon">💬</div>
+              <div class="module__title">WhatsApp Customer Flow</div>
+            </div>
+            <p>Clear buttons, quick routes, and message templates that guide customers to action.</p>
+          </div>
+
+          <div class="module reveal">
+            <div class="module__top">
+              <div class="module__icon">📍</div>
+              <div class="module__title">Google Visibility</div>
+            </div>
+            <p>Maps-ready presence so people can find you, navigate to you, and trust you.</p>
+          </div>
+
+          <div class="module reveal">
+            <div class="module__top">
+              <div class="module__icon">📧</div>
+              <div class="module__title">Professional Email</div>
+            </div>
+            <p>Business email that instantly raises credibility and helps you close deals.</p>
+          </div>
+
+          <div class="module reveal">
+            <div class="module__top">
+              <div class="module__icon">🔍</div>
+              <div class="module__title">Basic SEO Setup</div>
+            </div>
+            <p>Search-friendly foundation so your business is discoverable as you grow.</p>
+          </div>
+
+          <div class="module reveal">
+            <div class="module__top">
+              <div class="module__icon">🛠</div>
+              <div class="module__title">Hosting & Maintenance</div>
+            </div>
+            <p>Security updates, fixes, and support so your presence stays strong.</p>
+          </div>
+        </div>
+
+        <div class="systemOutline reveal" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2">How it works</h2>
+          <p class="sub">Simple, clear, and guided from first message to launch.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="step reveal">
+            <div class="step__dot" aria-hidden="true"></div>
+            <div class="step__content">
+              <h3 class="h3">We understand your business</h3>
+              <p>We learn what you offer, who you serve, and what your customers need to see.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <div class="step__dot" aria-hidden="true"></div>
+            <div class="step__content">
+              <h3 class="h3">We build your full setup</h3>
+              <p>Website, WhatsApp flow, visibility, email everything designed to feel official.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <div class="step__dot" aria-hidden="true"></div>
+            <div class="step__content">
+              <h3 class="h3">You review & approve</h3>
+              <p>You check the look, content, and flow. We refine until it’s right.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <div class="step__dot" aria-hidden="true"></div>
+            <div class="step__content">
+              <h3 class="h3">Your business goes live</h3>
+              <p>We launch, test on phones/tablets, and make sure everything is smooth.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <div class="step__dot" aria-hidden="true"></div>
+            <div class="step__content">
+              <h3 class="h3">We support & maintain</h3>
+              <p>Updates, fixes, and improvements so you stay ahead.</p>
+            </div>
+          </div>
+
+          <div class="timeline__line" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section class="section" id="packages">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2">Packages</h2>
+          <p class="sub">Prices are shared after we understand your business needs so you pay for what matters, not for noise.</p>
+        </div>
+
+        <div class="pricing">
+          <article class="priceCard reveal">
+            <div class="priceCard__top">
+              <h3 class="h3">Starter</h3>
+              <p class="muted">Best for new or small businesses starting online.</p>
+            </div>
+            <ul class="list">
+              <li>1–3 page premium website</li>
+              <li>WhatsApp customer flow</li>
+              <li>Basic Google presence guidance</li>
+              <li>Mobile-first setup</li>
+            </ul>
+            <a class="btn btn--gold" data-wa="Starter Package">See if Starter fits</a>
+          </article>
+
+          <article class="priceCard priceCard--featured reveal">
+            <div class="priceCard__badge">Most chosen</div>
+            <div class="priceCard__top">
+              <h3 class="h3">Growth</h3>
+              <p class="muted">Built for businesses ready to look official and convert more customers.</p>
+            </div>
+            <ul class="list">
+              <li>Website + trust-focused design</li>
+              <li>WhatsApp flows + templates</li>
+              <li>Google visibility setup support</li>
+              <li>Professional email setup guidance</li>
+              <li>Basic SEO foundation</li>
+            </ul>
+            <a class="btn btn--gold" data-wa="Growth Package">Get Growth details</a>
+          </article>
+
+          <article class="priceCard reveal">
+            <div class="priceCard__top">
+              <h3 class="h3">Business Pro</h3>
+              <p class="muted">For serious businesses ready to scale and dominate their niche.</p>
+            </div>
+            <ul class="list">
+              <li>Advanced multi-section site</li>
+              <li>Conversion-focused structure</li>
+              <li>SEO + analytics foundation</li>
+              <li>Support & maintenance plan</li>
+              <li>Priority refinements</li>
+            </ul>
+            <a class="btn btn--gold" data-wa="Business Pro Package">Talk Business Pro</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="section section--why">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2">Why Vision Web Agency</h2>
+          <p class="sub">We build digital presence like a system clean, premium, and built for the real customer journey in Tanzania.</p>
+        </div>
+
+        <div class="whyGrid">
+          <div class="whyItem reveal">
+            <h3 class="h3">No shortcuts</h3>
+            <p>We don’t ship “basic” websites. We ship trust.</p>
+          </div>
+          <div class="whyItem reveal">
+            <h3 class="h3">Mobile-first reality</h3>
+            <p>Most customers browse on phones so we design for phones first.</p>
+          </div>
+          <div class="whyItem reveal">
+            <h3 class="h3">Built for Tanzania</h3>
+            <p>WhatsApp flows, local clarity, and practical business outcomes.</p>
+          </div>
+          <div class="whyItem reveal">
+            <h3 class="h3">Support mindset</h3>
+            <p>After launch, we’re still here updates, fixes, guidance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / FINAL CTA -->
+    <section class="section section--cta" id="contact">
+      <div class="container">
+        <div class="ctaBox reveal">
+          <h2 class="h2">Ready to take your business seriously?</h2>
+          <p class="sub">Let’s set up your Business-in-a-Box™ and make your online presence feel official.</p>
+
+          <div class="ctaBox__actions">
+            <a class="btn btn--gold btn--lg" id="ctaWhatsApp" href="#" target="_blank" rel="noopener">WhatsApp us</a>
+            <a class="btn btn--ghost btn--lg" href="mailto:visionwebagency03@gmail.com">Email us</a>
+          </div>
+
+          <div class="contactInfo">
+            <div><span class="gold">Phone:</span> +255 758 144 662 • +255 794 732 426</div>
+            <div><span class="gold">Email:</span> visionwebagency03@gmail.com</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img class="footer__logo" src="assets/logo/logo.png" alt="Vision Web Agency" />
+        <div>
+          <div class="footer__name">Vision Web Agency</div>
+          <div class="footer__tag">Business-in-a-Box™</div>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <a href="#solution">Solution</a>
+        <a href="#how">How it works</a>
+        <a href="#packages">Packages</a>
+        <a href="#top">Back to top</a>
+      </div>
+
+      <div class="footer__note">
+        © <span id="year"></span> Vision Web Agency. All rights reserved.<br />
+        <span class="footer__legal">Vision Web Agency is a brand operated by New Vision Web Agency.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/intro.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
